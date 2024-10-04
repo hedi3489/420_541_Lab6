@@ -4,7 +4,6 @@ using TMPro;  // Make sure to include the TextMeshPro namespace
 
 public class GameOverController : MonoBehaviour
 {
-
     public TextMeshProUGUI scoreText;
     public GameObject gameOverPanel;
 
@@ -15,7 +14,7 @@ public class GameOverController : MonoBehaviour
         {
             scoreText.text = "Score: " + GameManager.Instance.score.ToString();
         }
-
+       
     }
     public void RestartGame()
     {
